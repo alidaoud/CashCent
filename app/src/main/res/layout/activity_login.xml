@@ -63,7 +63,7 @@
                     android:textColor="@color/white"
                     />
             </LinearLayout>
-
+ß
             <View
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/paddingStandard"/>
