@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/paddingXXLarge"
+    android:background="@drawable/bg_login_gradiant"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/paddingXLarge"
+                android:src="@drawable/img_login"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:text="@string/app_name"/>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/paddingXXLarge"/>
+
+
+            <LinearLayout
+                android:id="@+id/btn_login_with_email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingStart="@dimen/paddingStandard"
+                android:paddingEnd="@dimen/paddingStandard"
+                android:background="@drawable/bg_card_white_transparent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_login"
+                    android:layout_gravity="center_vertical"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:fontFamily="@font/Quicksand_SemiBold"
+                    android:text="@string/btn_login_with_email"
+                    android:textColor="@color/white"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/paddingStandard"/>
+
+
+            <LinearLayout
+                android:id="@+id/btn_register_an_account"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingStart="@dimen/paddingStandard"
+                android:paddingEnd="@dimen/paddingStandard"
+                android:background="@drawable/bg_card_white_transparent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_register"
+                    android:layout_gravity="center_vertical"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:fontFamily="@font/Quicksand_SemiBold"
+                    android:text="@string/btn_login_with_email"
+                    android:textColor="@color/white"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/paddingXXLarge"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="50dp"
+                    android:layout_height="0.5dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/paddingStandard"
+                    android:background="@color/color_grey"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:fontFamily="@font/Quicksand_SemiBold"
+                    android:text="@string/label_login_with"
+                    android:textColor="@color/white"
+                    />
+
+                <View
+                    android:layout_width="50dp"
+                    android:layout_height="0.5dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/paddingStandard"
+                    android:background="@color/color_grey"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/paddingLarge"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btn_login_with_facebook"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="@dimen/paddingStandard"
+                    android:background="@drawable/bg_circle_white"
+                    android:src="@drawable/ic_facebook" />
+
+                <View
+                    android:layout_width="@dimen/paddingLarge"
+                    android:layout_height="0dp"/>
+
+                <ImageButton
+                    android:id="@+id/btn_login_with_google"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="@dimen/paddingStandard"
+                    android:background="@drawable/bg_circle_white"
+                    android:src="@drawable/ic_google" />
+
+                <View
+                    android:layout_width="@dimen/paddingLarge"
+                    android:layout_height="0dp"/>
+
+                <ImageButton
+                    android:id="@+id/btn_login_with_phone"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="@dimen/paddingStandard"
+                    android:background="@drawable/bg_circle_white"
+                    android:src="@drawable/ic_phone" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/paddingXXLarge"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:fontFamily="@font/Quicksand_SemiBold"
+                android:text="@string/msg_login_terms_conditions"
+                android:textColor="@color/white"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

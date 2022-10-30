@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Cash Cent</string>
+
+    <string name="header_cashout">Cashout</string>
+    <string name="header_payment_method">Payment method</string>
+    <string name="header_invite">Invite</string>
+
+    <string name="title_total_coins">Total coins</string>
+    <string name="title_get_most_points">Get the most points here!</string>
+    <string name="title_quick_points">Quick points</string>
+    <string name="title_extra_points">Extra points</string>
+    <string name="title_play_earn">Play games and Earn now</string>
+    <string name="title_invite_friend">Invite Friend</string>
+    <string name="title_send_link">Send link</string>
+
+    <string name="hint_invite_friend">Earn 50 cent for each invite.</string>
+    <string name="hint_send_link">Send this link to invite someone</string>
+
+    <string name="label_your_earnings">Your earnings</string>
+
+    <string name="card_watch_video">Watch video</string>
+    <string name="card_fun_surveys">Fun surveys</string>
+    <string name="card_daily_tournment">Daily tournment</string>
+    <string name="card_refer_friends">Refer friends</string>
+    <string name="card_platinum_offers">Platinum offers</string>
+    <string name="card_diamond_offers">Diamond offers</string>
+    <string name="card_gold_offers">Gold offers</string>
+    <string name="card_bronze_offers">Bronze offers</string>
+    <string name="card_purple_offers">Purple offers</string>
+    <string name="card_easy_surveys">Easy surveys</string>
+    <string name="card_payment_paypal">Paypal</string>
+    <string name="card_payment_amazon">Amazon</string>
+
+    <string name="payment_amazon">Amazon</string>
+    <string name="payment_paypal">Paypal</string>
+    <string name="payment_bitcoin">Bitcoin</string>
+    <string name="payment_steam">Steam</string>
+
+    <string name="label_login_with">Login with</string>
+
+    <string name="msg_login_terms_conditions">By using the application you agree to the Terms of Service</string>
+
+    <string name="btn_login_with_email">Login with email</string>
+    <string name="btn_register_an_account">Register an account</string>
+    <string name="btn_collect">Collect</string>
+    <string name="btn_share">Share</string>
+    <string name="btn_play_now">Play now</string>
+
+</resources>

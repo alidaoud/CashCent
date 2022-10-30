@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="180dp"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="@dimen/paddingStandard"
+    android:layout_margin="@dimen/paddingLarge"
+    android:background="@drawable/bg_watch_video_card">
+
+    <ImageView
+        android:id="@+id/imgView_item_grid"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:padding="@dimen/paddingLarge"
+        android:layout_marginBottom="@dimen/paddingLarge"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_circle_white"
+        tools:src="@drawable/ic_watch_video"/>
+
+    <TextView
+        android:id="@+id/txtView_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/paddingSmall"
+        android:layout_gravity="center"
+        android:textSize="@dimen/txtSizeStandard"
+        android:textColor="@color/white"
+        android:textStyle="normal"
+        tools:text="@string/card_watch_video" />
+
+    <TextView
+        android:id="@+id/txtView_sub_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/paddingSmall"
+        android:layout_gravity="center"
+        android:textSize="@dimen/txtSizeSmall"
+        android:textColor="@color/white"
+        android:textStyle="normal"
+        tools:text="@string/card_watch_video" />
+</LinearLayout>
+

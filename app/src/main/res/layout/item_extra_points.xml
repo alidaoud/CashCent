@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:paddingStart="@dimen/paddingStandard"
+    android:paddingEnd="@dimen/paddingStandard"
+    android:layout_marginStart="@dimen/paddingLarge"
+    android:layout_marginEnd="@dimen/paddingLarge"
+    android:layout_marginTop="@dimen/paddingSmall"
+    android:layout_marginBottom="@dimen/paddingSmall"
+    android:gravity="center_vertical"
+    android:background="@drawable/bg_platinum_offers_item">
+
+    <ImageView
+        android:id="@+id/imgView_item_grid"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:padding="@dimen/paddingXSmall"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_circle_white"
+        tools:src="@drawable/ic_platinum_offers"/>
+
+    <TextView
+        android:id="@+id/txtView_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_toEndOf="@id/imgView_item_grid"
+        android:padding="@dimen/paddingSmall"
+        android:textColor="@color/black"
+        android:textSize="@dimen/txtSizeStandard"
+        android:textStyle="normal"
+        tools:text="@string/card_watch_video" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_btn_platinum_offers"
+        android:paddingStart="@dimen/paddingXSmall"
+        android:paddingEnd="@dimen/paddingXSmall">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            tools:src="@drawable/bitcoin" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/paddingSmall"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txtSizeSmall"
+            android:textStyle="normal"
+            tools:text="650,000" />
+    </LinearLayout>
+
+</RelativeLayout>

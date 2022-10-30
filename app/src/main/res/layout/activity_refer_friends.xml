@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:background="@drawable/bg_home_top">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/paddingLarge">
+
+            <ImageButton
+                android:id="@+id/btn_drawer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:src="@drawable/ic_arrow_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/paddingStandard"
+                android:text="@string/header_invite"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txtSizeLarge"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Scroll View Child -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/paddingLarge"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/paddingXLarge"
+                android:src="@drawable/ic_invite"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/paddingLarge"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/txtSizeLarge"
+                android:textStyle="bold"
+                style="@style/TitleStyle"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/paddingSmall"
+                android:text="@string/title_invite_friend"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/txtSizeStandard"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/paddingSmall"
+                android:text="@string/hint_invite_friend"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/paddingLarge"/>
+
+            <!-- Collect Section -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_gravity="center_vertical"
+                android:paddingStart="@dimen/paddingStandard"
+                android:paddingEnd="@dimen/paddingStandard"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_card_grey"
+                >
+
+                <ImageView
+                    android:id="@+id/imgView_total_coins"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_circle_white"
+                    tools:src="@drawable/bitcoin" />
+
+                <LinearLayout
+                    android:id="@+id/txtView_total_coins_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="@dimen/paddingSmall"
+                    android:layout_toEndOf="@id/imgView_total_coins"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/txtSizeSmall"
+                        android:textStyle="normal"
+                        android:text="@string/label_your_earnings" />
+
+                    <TextView
+                        android:id="@+id/txtView_total_coins_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/txtSizeLarge"
+                        android:textStyle="bold"
+                        style="@style/SemiBold"
+                        tools:text="0,00" />
+                </LinearLayout>
+
+
+                <android.widget.Button
+                    android:id="@+id/btn_collect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/bg_btn_standard"
+                    android:gravity="center"
+                    android:shadowColor="@android:color/transparent"
+                    android:text="@string/btn_collect"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txtSizeStandard"
+                    android:textStyle="normal" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal"
+                    android:background="@drawable/bg_btn_platinum_offers"
+                    android:paddingStart="@dimen/paddingXSmall"
+                    android:paddingEnd="@dimen/paddingXSmall">
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/paddingXLarge"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/txtSizeLarge"
+                android:textStyle="bold"
+                android:text="@string/title_send_link"/>
+
+
+            <!-- Send Link Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="@dimen/paddingLarge"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/bg_card_grey"
+                >
+
+                <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_circle_primary"
+                    android:src="@drawable/ic_share"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/paddingSmall"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txtSizeSmall"
+                    android:textStyle="normal"
+                    android:text="@string/hint_send_link" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/paddingStandard"
+                    android:layout_marginTop="@dimen/paddingStandard"
+                    android:layout_marginBottom="@dimen/paddingStandard"
+                    android:textColor="@color/black"
+                    android:background="@drawable/bg_card_white"
+                    android:textSize="@dimen/txtSizeStandard"
+                    android:textStyle="normal"
+                    tools:text="https://eample.com/?ref=0" />
+
+                <android.widget.Button
+                    android:id="@+id/btn_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:background="@drawable/bg_btn_standard"
+                    android:shadowColor="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="@string/btn_share"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txtSizeStandard"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>
