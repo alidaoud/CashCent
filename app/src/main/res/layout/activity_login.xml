@@ -89,7 +89,7 @@
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:fontFamily="@font/Quicksand_SemiBold"
-                    android:text="@string/btn_login_with_email"
+                    android:text="@string/btn_register_an_account"
                     android:textColor="@color/white"
                     />
             </LinearLayout>

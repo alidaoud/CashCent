@@ -42,22 +42,22 @@
 
 
 
-    <!--    <GridView-->
-    <!--        android:id="@+id/grid_view_payments"-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="match_parent"-->
-    <!--        android:numColumns="2"-->
-    <!--        android:paddingVertical="@dimen/paddingLarge"-->
-    <!--        android:paddingHorizontal="@dimen/paddingLarge"-->
-    <!--        tools:listitem="@layout/item_grid_home"-->
-    <!--        />-->
+        <GridView
+            android:id="@+id/grid_view_payments"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:numColumns="2"
+            android:paddingVertical="@dimen/paddingLarge"
+            android:paddingHorizontal="@dimen/paddingLarge"
+            tools:listitem="@layout/item_payment_grid"
+            />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler_view_payments"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:listitem="@layout/item_payment_grid"
-        app:spanCount="2"
-        />
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/recycler_view_payments"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        tools:listitem="@layout/item_payment_grid"-->
+<!--        app:spanCount="2"-->
+<!--        />-->
 
 </LinearLayout>

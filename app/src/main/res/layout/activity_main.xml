@@ -56,8 +56,9 @@
                     android:textColor="@color/white"
                     android:textSize="@dimen/txtSizeStandard"
                     android:textStyle="normal"
+                    android:fontFamily="@font/poppins_regular"
                     android:background="@drawable/bg_white_transparent_radius"
-                    tools:text="@string/card_watch_video" />
+                    tools:text="@string/header_cashout" />
             </LinearLayout>
 
 
